@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Liberal)(type KiCad)(uri ${KIPRJMOD}/Liberal.pretty)(options "")(descr ""))
+)
