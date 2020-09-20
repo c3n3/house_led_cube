@@ -18,7 +18,12 @@ void setup()
  */
 void loop() 
 {
-    set_led(0, 0x01);
+    // set_led(1, 0x01);
+    print_leds();
+    // delay(2000);
+    // set_led(1, 0x00);
+    // print_leds();
+    // delay(2000);
     // set_led(1, 0x02);
     // set_led(2, 0x03);
     // set_led(3, 0x04);
@@ -26,7 +31,7 @@ void loop()
     // set_led(5, 0x0D);
     // set_led(6, 0x0E);
     // set_led(7, 0x0F);
-    delay(1000);
+    // delay(1000);
     // Serial.print("From Main: ");
     // Serial.print((int)px_buf);
     // Serial.print("\n");
