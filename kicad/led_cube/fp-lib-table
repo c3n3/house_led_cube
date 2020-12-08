@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/footprints.pretty)(options "")(descr ""))
+  (lib (name house_cube)(type KiCad)(uri ${KIPRJMOD}/house_cube.pretty)(options "")(descr ""))
 )

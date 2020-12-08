@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name 2020-09-13_18-05-30)(type Legacy)(uri ${KIPRJMOD}/2020-09-13_18-05-30.lib)(options "")(descr ""))
+  (lib (name led_cube-cache)(type Legacy)(uri ${KIPRJMOD}/led_cube-cache.lib)(options "")(descr ""))
+  (lib (name house_cube)(type Legacy)(uri ${KIPRJMOD}/house_cube.lib)(options "")(descr ""))
 )
