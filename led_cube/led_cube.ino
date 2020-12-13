@@ -228,7 +228,7 @@ void loop()
     static int layer = 3;
     MILLIS_TIMER(50, timer)
     TRIPLE_LOOP(x,y,z)
-        set(1,3,2,power);
+        set(x,y,z,power);
     END_TRIPLE_LOOP
     if (onUP) {
         power = power + 1;
