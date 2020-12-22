@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/mnt/c/Users/ccade/code/house_led_cube/led_cube/test/build",
-  "command": "/usr/bin/c++    -g   -o CMakeFiles/pixel.dir/main.cpp.o -c /mnt/c/Users/ccade/code/house_led_cube/led_cube/test/main.cpp",
-  "file": "/mnt/c/Users/ccade/code/house_led_cube/led_cube/test/main.cpp"
-}
-]

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name house_cube)(type Legacy)(uri C:/Users/ccade/code/house_led_cube/kicad/led_cube/house_cube.lib)(options "")(descr ""))
+)

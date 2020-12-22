@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name house_cube)(type KiCad)(uri C:/Users/ccade/code/house_led_cube/kicad/led_cube/house_cube.pretty)(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri C:/Users/ccade/code/house_led_cube/kicad/led_cube/footprints.pretty)(options "")(descr ""))
+)
