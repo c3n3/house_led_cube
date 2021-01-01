@@ -105,7 +105,6 @@ void Relativistic::setDirectionalLED(const uint8_t firstCord, const uint8_t seco
     default:
         break;
     }
-    return 0;
 }
 uint8_t Relativistic::getDirectionalLED(const uint8_t firstCord, const uint8_t secondCord, const uint8_t thirdCord, Directions direction) {
         switch (direction)

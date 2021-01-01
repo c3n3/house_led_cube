@@ -1,6 +1,6 @@
 #pragma once
 // SAMD is the 32 bit arduinos, otherwise assumes AVR
-#define USING_SAMD 0
+#define USING_SAMD 1
 
 //PINS
 #define BLANK_PIN 4

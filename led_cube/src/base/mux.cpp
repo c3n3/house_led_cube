@@ -7,7 +7,6 @@ uint8_t leds0[NUM_LEDS / 8]; // each set of brightness
 uint8_t leds1[NUM_LEDS / 8]; // each set of brightness
 uint8_t leds2[NUM_LEDS / 8]; // each set of brightness
 uint8_t leds3[NUM_LEDS / 8]; // each set of brightness
-uint8_t leds4[NUM_LEDS / 8]; // each set of brightness
 
 #if USING_SAMD
 #define SAMD_TIMER_INTERRUPT_DEBUG 0
@@ -35,17 +34,7 @@ ISR(TIMER1_COMPA_vect){
 #else
     shiftOut(DATA_PIN, CLOCK_PIN, MSBFIRST, 0x01 << layer);
 #endif
-    // 8 / 15
-    if (it > 15) { // 8, 9, 10, 11, 12, 13, 14, 15
-        for (int i = layer * BYTES_PER_LAYER; i < layer * BYTES_PER_LAYER + BYTES_PER_LAYER; i++) {
-#if ENABLE_SPI
-            SPI.transfer(leds4[i]);
-#else
-            shiftOut(DATA_PIN, CLOCK_PIN, LSBFIRST, leds3[i]);
-#endif
-        }
-    }
-    else if (it > 7) { // 8, 9, 10, 11, 12, 13, 14, 15
+    if (it > 7) { // 8, 9, 10, 11, 12, 13, 14, 15
         for (int i = layer * BYTES_PER_LAYER; i < layer * BYTES_PER_LAYER + BYTES_PER_LAYER; i++) {
 #if ENABLE_SPI
             SPI.transfer(leds3[i]);
@@ -86,7 +75,7 @@ ISR(TIMER1_COMPA_vect){
 
     it++;
     layer++;
-    if (it == 32) {
+    if (it == 16) {
         it = 1;
     }
 
@@ -114,7 +103,7 @@ void mux_init()
 #if ENABLE_DEBUG
 #endif
 #if USING_SAMD
-  samd_timer0.attachInterruptInterval(250, TimerHandler0);
+  samd_timer0.attachInterruptInterval(150, TimerHandler0);
 #else
     TCCR1A = B00000000;
     TCCR1B = B00001011; // CTC mode
@@ -132,7 +121,6 @@ void mux_init()
         leds1[i] = 0;
         leds2[i] = 0;
         leds3[i] = 0;
-        leds4[i] = 0;
     }
 #if ENABLE_SPI
     SPI.begin(); //start up the SPI library

@@ -42,7 +42,7 @@ void Squares::run(uint32_t time, bool timed)
         if (millis() - timerP > 50) {
             if (pUp) {
                 power = power + 1;
-                if (power == 31) {
+                if (power == 15) {
                     pUp = false;
                 }
             } else {

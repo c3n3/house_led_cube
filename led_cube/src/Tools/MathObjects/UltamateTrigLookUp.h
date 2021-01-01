@@ -56,7 +56,7 @@ struct CosLookUpTable {
      * @brief Construct a new Sin Look Up Table object
      * 
      */
-    SinLookUpTable() {
+    CosLookUpTable() {
         double pi = 3.1415926535897932384626433832795028841971693993751058209749445923078164062; // that might be a bit long
         for (int i = 0; i < N; i++) {
             // this is just some math to make the table go from 0 - N in sinusoidal fashion

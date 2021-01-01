@@ -75,7 +75,7 @@ Particle::Particle(Vector<float> p, Vector<float> v, Vector<float> a, uint16_t r
     timer = millis();
 }
 
-Particle::Particle() {
+Particle::Particle(): resolution(0.5) {
     point = Vector<float>(0,0,0);
     velocity = Vector<float>(0,0,0);
     acceleration = Vector<float>(0,0,0);
