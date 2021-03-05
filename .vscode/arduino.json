@@ -1,6 +1,5 @@
 {
-    "board": "arduino:avr:nano",
-    "configuration": "cpu=atmega328old",
+    "board": "arduino:samd:nano_33_iot",
     "sketch": "led_cube\\led_cube.ino",
     "programmer": "AVRISP mkII"
 }

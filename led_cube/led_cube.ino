@@ -11,6 +11,7 @@
 #include "src/Animations/Wave2.0.h"
 #include "src/Animations/Squares.h"
 #include "src/Experimental/RandomParticle.h"
+#include "src/Animations/Plane.h"
 
 void setup()
 {
@@ -23,17 +24,13 @@ void setup()
 
 void loop()
 {
-    // in regards to the use of new, we do not need to worry about leaking memory because this will last till the thing is turned off.
-    // Could possibly optimise memory by not allocating all apps at once, but will need a new mechinism
-    // RandomParticles s;
-    // s.run();
     App* app = App::Ctor<Wave2p0>();
     app->run();
      AppCtor stuff[] = {
-          App::Ctor<Wave2p0>, App::Ctor<Squares>, App::Ctor<Wave2p0>, App::Ctor<Space>, App::Ctor<Wave2p0>, App::Ctor<Snow>
+          App::Ctor<Wave2p0>, App::Ctor<Squares>, App::Ctor<Wave2p0>, App::Ctor<Space>, App::Ctor<Wave2p0>, App::Ctor<Snow>, App::Ctor<Plane>
      };
      AppCtor* screenSaver = stuff;
     // creation of the menu application 
-     Menu menu = Menu(((AppCtor*)stuff), 6, (AppCtor*)screenSaver, 6);
+     Menu menu = Menu(((AppCtor*)stuff), 7, (AppCtor*)screenSaver, 7);
     menu.run(); // thats all folks
 }
