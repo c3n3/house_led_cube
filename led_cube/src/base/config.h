@@ -2,6 +2,13 @@
 // SAMD is the 32 bit arduinos, otherwise assumes AVR
 #define USING_SAMD 1
 
+// Cube type. Unified cube theory...
+// All supported cubes listed here.
+// Set CUBE_TYPE to whatever cube you are using.
+#define CADEN_CHURCHMAN_CUSTOM_V1 0
+#define KSU_12x12x12_RGB_CUBE 1
+#define CUBE_TYPE CADEN_CHURCHMAN_CUSTOM_V1
+
 //PINS
 #define BLANK_PIN 4
 #define ENABLE_DEBUG 1

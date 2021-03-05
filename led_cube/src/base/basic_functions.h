@@ -3,6 +3,7 @@
 #include "../types/typedef.h"
 #include "config.h"
 void set_led(uint8_t x, uint8_t y, uint8_t z, uint8_t brightness);
+void lim_set_led(uint8_t x, uint8_t y, uint8_t z, uint8_t brightness);
 uint8_t get_led(uint8_t x, uint8_t y, uint8_t z);
 void clearCube();
 #define TRIPLE_LOOP(x,y,z) for(uint8_t x = 0;x < NUM_LEDS_SINGLE_AXIS;x++){\
