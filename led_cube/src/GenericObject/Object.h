@@ -1,5 +1,6 @@
 #include "../types/typedef.h"
 #include "../ParticleSystem/Particle.h"
+#include "../RelativeCoordinates/Relativistic.h"
 class Object
 {
 private:
@@ -12,8 +13,8 @@ public:
     uint8_t power;
     Object(
         Particle position, 
-        directRelativistic::Directionsions direction,
-        void (*drawSelf)(ui8 x, ui8 y, ui8 z, Relativistic::Directions d, Color color), 
+        Relativistic::Directions direction,
+        void (*drawSelf)(ui8 x, ui8 y, ui8 z, Relativistic::Directions d, light_t color), 
         uint8_t power = 0xFF)
             : drawSelf(drawSelf), direction(direction), position(position), power(power) {}
     void draw() {

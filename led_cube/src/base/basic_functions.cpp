@@ -26,6 +26,10 @@ void set_led(uint8_t x, uint8_t y, uint8_t z, uint8_t power) {
     bitWrite(leds0[byte], ledNum, (power & 0x01) >> 0); //  
 }
 
+void set_led_rgb(uint8_t x, uint8_t y, uint8_t z, uint8_t r, uint8_t g, uint8_t b) {
+    
+}
+
 uint8_t get_led(uint8_t x, uint8_t y, uint8_t z) {
     // y = 7 - y; // just makes the thing
     int byte = int((z*NUM_LEDS_LAYER+y*NUM_LEDS_SINGLE_AXIS + x)/8);

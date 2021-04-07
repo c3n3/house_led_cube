@@ -1,7 +1,7 @@
 #include "HelpfulFunctions.h"
 
 
-ui8 help::normalize(float& notNormal)
+ui8 Help::normalize(float& notNormal)
 {
     ui8 normalized = (notNormal + 0.5);
     if (normalized - 1 > (AXIS_MAX - 1))
@@ -12,7 +12,7 @@ ui8 help::normalize(float& notNormal)
 }
 
 // delete all of a color on the entire cube
-void help::eradicate(uint8_t power)
+void Help::eradicate(light_t power)
 {
     for (uint8_t i = 0; i < 12; i++)
     {
@@ -30,7 +30,7 @@ void help::eradicate(uint8_t power)
 }
 
 // draws a box based on the 6 coordinates (Two Points in the cube) and the color (This thing definitley needs rewritting)
-void help::DrawFigure(int x1, int y1, int z1, int x2, int y2, int z2, uint8_t power)
+void Help::DrawFigure(int x1, int y1, int z1, int x2, int y2, int z2, light_t power)
 {
     // make this?
 }

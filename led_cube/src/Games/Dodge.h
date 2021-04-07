@@ -103,7 +103,7 @@
 //             if (millis() - timer0 > delayTime)
 //             {
 //                 Serial.print(ledCount);
-//                 help::setRandomLED(ledCount, Relativistic::BACKWARD, 0xFFF);
+//                 Help::setRandomLED(ledCount, Relativistic::BACKWARD, 0xFFF);
 
 //                 for (int i = 0; i < 12; i++)
 //                 {
@@ -118,7 +118,7 @@
 //         }
 //         else if (key != 7)
 //         {
-//             help::setRandomLED(ledCount, Relativistic::BACKWARD, 0xFFF);
+//             Help::setRandomLED(ledCount, Relativistic::BACKWARD, 0xFFF);
 //             key = 7;
 //         }
 //     }

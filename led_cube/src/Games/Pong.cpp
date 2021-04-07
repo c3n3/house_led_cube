@@ -41,9 +41,9 @@
 
 // void Pong::drawBall(bool draw)
 // {
-//     ui8 normalizedX = help::normalize(x);
-//     ui8 normalizedY = help::normalize(y);
-//     ui8 normalizedZ = help::normalize(z);
+//     ui8 normalizedX = Help::normalize(x);
+//     ui8 normalizedY = Help::normalize(y);
+//     ui8 normalizedZ = Help::normalize(z);
 
 //     // loop is wierd so that no repeated LEDs are painted
 //     for (int i = -1; i < 2; i += 2)
@@ -93,7 +93,7 @@
 // {
 //     for (int i = 0; i < 2; i++)
 //     {
-//         if (players[i]->deservesFailure(help::normalize(x), help::normalize(y), help::normalize(z)))
+//         if (players[i]->deservesFailure(Help::normalize(x), Help::normalize(y), Help::normalize(z)))
 //         {
 //             //TODO: if four player pong is wanted then restructure this part
 //             players[i]->lives--;
@@ -174,7 +174,7 @@
 //     lives = startScore;
 // }
 
-// //Assume coordinates have been help::normalized, do not pass by referance here
+// //Assume coordinates have been Help::normalized, do not pass by referance here
 // bool Pong::Player::deservesFailure(ui8 ballX, ui8 ballY, ui8 ballZ)
 // {
 //     if (!alive)

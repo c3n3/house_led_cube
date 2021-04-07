@@ -60,7 +60,7 @@ void Particle::drawSelf(const uint8_t powour) {
     // ) {
     //     return;
     // }
-    set_led(help::normalize(point.x), help::normalize(point.y), help::normalize(point.z), powour);
+    set_led(Help::normalize(point.x), Help::normalize(point.y), Help::normalize(point.z), powour);
 }
 
 void Particle::drawSelf() {
@@ -68,7 +68,7 @@ void Particle::drawSelf() {
     // (point.y - (int)point.y > tolerance) && (point.y - (int) point.y < 1 - tolerance)) {
     //     return;
     // }
-    set_led(help::normalize(point.x), help::normalize(point.y), help::normalize(point.z), power);
+    set_led(Help::normalize(point.x), Help::normalize(point.y), Help::normalize(point.z), power);
 }
     
 Particle::Particle(Vector<float> p, Vector<float> v, Vector<float> a, uint16_t r, WallEffects e, uint8_t power, float tolerance): resolution(r), power(power), tolerance(tolerance) {
